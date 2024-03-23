@@ -1,0 +1,16 @@
+body{
+    align-content: center;
+    background-color: lavender;
+    font-family: cursive !important;
+}
+.cards{
+    font-size: medium;
+    font-style: italic;
+    /* background-color: antiquewhite; */
+    margin-left: 25%;
+
+}
+
+button{
+    border-radius: 10px;
+}

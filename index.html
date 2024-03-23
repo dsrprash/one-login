@@ -1,12 +1,15 @@
 <script src="scripts/script.js"></script>
+<link rel="stylesheet" href="styles/style.css">
 
-<h2> Welcome Prashanth!</h2>
+<body>
+    <h2> Welcome Prashanth!</h2>
 
-<div class="cards"> 
-    <div onclick="handleClick('dev');" >
-    <button >Sf - Dev</button>    
+    <div class="cards">
+        <div onclick="handleClick('dev');">
+            <button>Sf - Dev</button>
+        </div>
+        <div onclick="handleClick('cpqdev');" data-url="https://prash-env-dev-ed.lightning.force.com/">
+            <button>Sf - cpq Dev</button>
+        </div>
     </div>
-    <div onclick="handleClick('cpqdev');" data-url="https://prash-env-dev-ed.lightning.force.com/">
-        <button >Sf - cpq Dev</button>    
-    </div>
-</div>
+</body>

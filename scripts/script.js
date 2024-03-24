@@ -3,6 +3,7 @@ orgs.set('dev', {name:'Salesforce Dev Edition', url:'https://prash-env-dev-ed.li
 orgs.set('cpqdev',{name:'CPQ Dev', url:'https://prash-cpq-dev-ed.my.salesforce.com/', desc:'This CPQ pre-installed org'})
 
 function loadFunction(){
+    document.getElementById('date').innerText = new Date().toDateString();
     let cardsDiv = document.getElementById('cards');
     
 

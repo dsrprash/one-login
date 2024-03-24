@@ -1,16 +1,23 @@
 body{
-    align-content: center;
+    margin: 0px 0px 0px 0px;
     background-color: lavender;
-    font-family: cursive !important;
+    font-family: monospace;
+    text-align: center;
+}
+.heading-banner{
+    text-align: center;
+    background-color: aquamarine;
+    height: 60px;
+
 }
 .cards{
-    font-size: medium;
-    font-style: italic;
-    /* background-color: antiquewhite; */
-    margin-left: 25%;
-
 }
-
-button{
-    border-radius: 10px;
+.card{
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: cornflowerblue;
 }

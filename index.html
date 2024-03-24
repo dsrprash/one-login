@@ -1,15 +1,24 @@
 <script src="scripts/script.js"></script>
 <link rel="stylesheet" href="styles/style.css">
 
-<body>
-    <h2> Welcome Prashanth!</h2>
+<body class="container" onload="loadFunction()">
 
-    <div class="cards">
-        <div onclick="handleClick('dev');">
-            <button>Sf - Dev</button>
-        </div>
-        <div onclick="handleClick('cpqdev');" data-url="https://prash-env-dev-ed.lightning.force.com/">
-            <button>Sf - cpq Dev</button>
-        </div>
+    <!-- header banner -->
+    <div class="heading-banner">
+        <h1> Welcome Prashanth!</h1>
+        <p> Sunday</p>
     </div>
+    
+    <!-- links to orgs / actions -->
+    <div class="cards" id="cards">
+        <!-- <div class="card" onclick="handleClick('dev');">
+            <h2>SF-Dev</h2>
+            <p class="card-description">short description about this org</p>
+        </div>
+        <div class="card"  onclick="handleClick('cpqdev');" data-url="https://prash-env-dev-ed.lightning.force.com/">
+            <h2>SF-cpq Dev</h2>
+        </div> -->
+    </div>
+
+
 </body>

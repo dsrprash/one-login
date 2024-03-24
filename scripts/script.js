@@ -1,6 +1,7 @@
 let orgs = new Map();
 orgs.set('dev', {name:'Salesforce Dev Edition', url:'https://prash-env-dev-ed.lightning.force.com/', desc: 'Ths is personal developer edition org'});
-orgs.set('cpqdev',{name:'CPQ Dev', url:'https://prash-cpq-dev-ed.my.salesforce.com/', desc:'This CPQ pre-installed org'})
+orgs.set('cpqdev',{name:'CPQ Dev', url:'https://prash-cpq-dev-ed.my.salesforce.com/', desc:'This CPQ pre-installed org'});
+orgs.set('playground', {name: 'Salesforce Playground org', url: 'https://cunning-moose-38507-dev-ed.my.salesforce.com/', desc: 'This is playground org'});
 
 function loadFunction(){
     document.getElementById('date').innerText = new Date().toDateString();

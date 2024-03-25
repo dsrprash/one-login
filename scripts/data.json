@@ -1,0 +1,19 @@
+
+{
+    "dev" : {
+        "name": "Salesforce Dev Edition", 
+        "url": "https://prash-env-dev-ed.lightning.force.com/", 
+        "desc": "Ths is personal developer edition org"
+    },
+    "cpqdev" : {
+        "name":"CPQ Dev", 
+        "url":"https://prash-cpq-dev-ed.my.salesforce.com/", 
+        "desc":"This CPQ pre-installed org"
+    },
+    "playground" : {
+        "name": "Salesforce Playground org", 
+        "url": "https://cunning-moose-38507-dev-ed.my.salesforce.com/", 
+        "desc": "This is playground org"
+    }
+    
+}

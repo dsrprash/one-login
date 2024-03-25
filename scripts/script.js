@@ -11,7 +11,7 @@ function loadFunction(){
     let cardsHtml = '';
     for([key, value] of orgs){
         cardsHtml = cardsHtml + 
-                    '<div class="card" onclick="handleClick("'+key+'");">'+
+                    '<div class="card" onclick="handleClick(\''+key+'\');">'+
                         '<h2>'+value.name+'</h2>' +
                         '<p class="card-description">'+value.desc+'</p>'+
                     '</div>';
@@ -23,7 +23,7 @@ function loadFunction(){
 function handleClick(orgname){
 
     console.log('orgname ==> '+orgname);
-    let url = orgs.get(orgname);
+    let url = orgs.get(orgname)?.url;
     console.log('url ==> '+url);
     window.open(url, '_blank');
 

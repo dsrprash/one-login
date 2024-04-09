@@ -1,23 +1,30 @@
 <head>
-<script src="scripts/script.js"></script>
-<link rel="stylesheet" href="styles/style.css">
-<link rel="icon" type="image/x-icon" href="images/favicon.png">
-<title>
-    One-Login
-</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>
+        One-Login
+    </title>
 
 </head>
 
 
-<body class="container" onload="initialize()">
+<body onload="initialize()">
 
     <!-- header banner -->
     <div class="heading-banner">
-        <strong><h1> Welcome Prashanth!</h1></strong>
+        <strong>
+            <h1> Welcome Prashanth!</h1>
+        </strong>
         <p id="date"> Sunday</p>
-        <i><p id="quote"></p></i>
+        <i>
+            <p id="quote"></p>
+        </i>
     </div>
-    
+
     <!-- links to orgs / actions -->
     <div class="cards" id="cards">
         <!-- <div class="card" onclick="handleClick('dev');">
@@ -29,18 +36,22 @@
         </div> -->
     </div>
 
-    <div>
-        <table  class="center">
-            <caption>Quick links</caption>
-            <tbody>
-                <tr>
-                    <td> <a href="https://www.billdesk.com/pgidsk/pgmerc/npdcl/NPDCLDetails.jsp"
-                            target="_blank">PowerBill</a></td>
-                    <td> <a href="https://trailhead.salesforce.com/en/home" target="_blank">Trailhead</a></td>
-                </tr>
-            </tbody>
-    
-        </table>
-    </div>
+    <table class="center">
+        <caption>Quick links</caption>
+        <tbody>
+            <tr>
+                <td> 
+                    <a href="https://www.billdesk.com/pgidsk/pgmerc/npdcl/NPDCLDetails.jsp" target="_blank">
+                        <span class="label label-primary">PowerBill</span>
+                    </a>
+                </td>
+                <td> 
+                    <a href="https://trailhead.salesforce.com/en/home" target="_blank">
+                        <span class="label label-primary">Trailhead</span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
 
+    </table>
 </body>

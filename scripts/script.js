@@ -3,6 +3,35 @@ let orgs = new Map();
 // orgs.set('cpqdev',{name:'CPQ Dev', url:'https://prash-cpq-dev-ed.my.salesforce.com/', desc:'This CPQ pre-installed org'});
 // orgs.set('playground', {name: 'Salesforce Playground org', url: 'https://cunning-moose-38507-dev-ed.my.salesforce.com/', desc: 'This is playground org'});
 
+quoteEndpoint = 'https://api.quotable.io/quotes/random';
+
+
+function initialize(){
+
+    getQuote();
+    loadFunction();
+
+}
+
+function getQuote(){
+    fetch(quoteEndpoint)
+            .then((response) => {
+                if (!response.ok) {
+                    console.error('error in response ==> ', response);
+                }
+                return response.json();
+            })
+            .then((jsonResponse) => {
+                if(jsonResponse && jsonResponse.length > 0){
+                    document.getElementById('quote').innerText = jsonResponse[0].content;
+                }
+            })
+            .catch((error) => {
+                console.error('error from catch ==> ', error);
+            });
+
+}
+
 async function loadFunction(){
     document.getElementById('date').innerText = new Date().toDateString();
     let cardsDiv = document.getElementById('cards');
